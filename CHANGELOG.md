@@ -72,7 +72,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Change license to CC0-1.0. ([#241](https://github.com/golang-templates/seed/pull/241))
-- Update Codecov instructions for v4. ([#289](https://github.com/golang-templates/seed/pull/289))
 
 ### Fixed
 

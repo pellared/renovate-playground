@@ -5,7 +5,6 @@
 [![go.mod](https://img.shields.io/github/go-mod/go-version/golang-templates/seed)](go.mod)
 [![LICENSE](https://img.shields.io/github/license/golang-templates/seed)](LICENSE)
 [![Go Report Card](https://goreportcard.com/badge/github.com/golang-templates/seed)](https://goreportcard.com/report/github.com/golang-templates/seed)
-[![Codecov](https://codecov.io/gh/golang-templates/seed/branch/main/graph/badge.svg)](https://codecov.io/gh/golang-templates/seed)
 
 ⭐ `Star` this repository if you find it valuable and worth maintaining.
 
@@ -29,8 +28,7 @@ It includes:
   and [misspell](https://github.com/client9/misspell),
 - unit testing with
   [race detector](https://blog.golang.org/race-detector),
-  code coverage [HTML report](https://blog.golang.org/cover)
-  and [Codecov report](https://codecov.io/),
+  code coverage [HTML report](https://blog.golang.org/cover),
 - releasing using [GoReleaser](https://github.com/goreleaser/goreleaser),
 - dependencies scanning and updating thanks to [Dependabot](https://dependabot.com),
 - security code analysis using [CodeQL Action](https://docs.github.com/en/github/finding-security-vulnerabilities-and-errors-in-your-code/about-code-scanning),
@@ -39,13 +37,9 @@ It includes:
 
 ## Usage
 
-1. Sign up on [Codecov](https://codecov.io/) and configure
-   [Codecov GitHub Application](https://github.com/apps/codecov).
 1. Click the `Use this template` button (alt. clone or download this repository).
 1. Replace all occurrences of `golang-templates/seed` to `your_org/repo_name` in all files.
 1. Replace all occurrences of `seed` to `repo_name` in [Dockerfile](Dockerfile).
-1. Follow [these](https://docs.codecov.com/docs/adding-the-codecov-token#github-actions)
-   instructions to add the `CODECOV_TOKEN` GitHub Actions and Dependabot secret.
 1. Update the following files:
    - [CHANGELOG.md](CHANGELOG.md)
    - [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
