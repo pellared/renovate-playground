@@ -31,12 +31,14 @@ It includes:
 - dependencies scanning and updating thanks to [Dependabot](https://dependabot.com),
 - security code analysis using [CodeQL Action](https://docs.github.com/en/github/finding-security-vulnerabilities-and-errors-in-your-code/about-code-scanning),
   and [govulncheck](https://pkg.go.dev/golang.org/x/vuln/cmd/govulncheck),
-- [Visual Studio Code](https://code.visualstudio.com) configuration with [Go](https://code.visualstudio.com/docs/languages/go) support.
+- [Visual Studio Code](https://code.visualstudio.com) configuration with
+  [Go](https://code.visualstudio.com/docs/languages/go) support.
 
 ## Usage
 
 1. Click the `Use this template` button (alt. clone or download this repository).
-1. Replace all occurrences of `golang-templates/seed` to `your_org/repo_name` in all files.
+1. Replace all occurrences of `golang-templates/seed` to
+  `your_org/repo_name` in all files.
 1. Replace all occurrences of `seed` to `repo_name` in [Dockerfile](Dockerfile).
 1. Update the following files:
    - [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
@@ -85,7 +87,8 @@ Notable files:
 - [.vscode](.vscode) - Visual Studio Code configuration files,
 - [.golangci.yml](.golangci.yml) - golangci-lint configuration,
 - [Dockerfile](Dockerfile) - Dockerfile for containerization,
-- [Makefile](Makefile) - Make targets used for development, [CI build](.github/workflows) and [.vscode/tasks.json](.vscode/tasks.json),
+- [Makefile](Makefile) - Make targets used for development,
+  [CI build](.github/workflows) and [.vscode/tasks.json](.vscode/tasks.json).
 
 ## FAQ
 
@@ -97,12 +100,14 @@ Setting configs for each repo is unnecessary time consuming.
 VS Code is the most popular Go editor ([survey](https://blog.golang.org/survey2019-results))
 and it is officially [supported by the Go team](https://blog.golang.org/vscode-go).
 
-You can always remove the [.vscode](.vscode) directory if it really does not help you.
+You can always remove the [.vscode](.vscode) directory
+if it really does not help you.
 
 ### Why GitHub Actions, not any other CI server
 
 GitHub Actions is out-of-the-box if you are already using GitHub.
-[Here](https://github.com/mvdan/github-actions-golang) you can learn how to use it for Go.
+[Here](https://github.com/mvdan/github-actions-golang) you can learn
+how to use it for Go.
 
 However, changing to any other CI server should be very simple,
 because this repository has build logic and tooling installation in [Makefile](Makefile).
@@ -120,7 +125,8 @@ if you have problems using Docker in Git Bash.
 
 You can also use [WSL (Windows Subsystem for Linux)](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 or develop inside a [Remote Container](https://code.visualstudio.com/docs/remote/containers).
-However, take into consideration that then you are not going to use "bare-metal" Windows.
+However, take into consideration that then you are not going to use
+"bare-metal" Windows.
 
 Consider using [goyek](https://github.com/goyek/goyek)
 for creating cross-platform build pipelines in Go.

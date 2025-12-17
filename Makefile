@@ -1,10 +1,13 @@
 SHELL := /bin/bash
 
+# renovate: datasource=docker depName=ghcr.io/igorshubovych/markdownlint-cli versioning=docker
+MARKDOWNLINT_VERSION = v0.43.0
+
 .DEFAULT_GOAL := all
 
 .PHONY: all
 all: ## build pipeline
-all: mod gen build spell lint test
+all: mdlint mod gen build spell lint test
 
 .PHONY: precommit
 precommit: ## validate the branch before commit
@@ -44,6 +47,10 @@ build: ## go build
 .PHONY: spell
 spell: ## misspell
 	go tool misspell -error -locale=US -w **.md
+
+.PHONY: mdlint
+mdlint: ## markdownlint
+	docker run --rm -v "$(PWD):/workdir" ghcr.io/igorshubovych/markdownlint-cli:$(MARKDOWNLINT_VERSION) "**/*.md"
 
 .PHONY: lint
 lint: ## golangci-lint
