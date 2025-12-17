@@ -1,6 +1,5 @@
 # Go Repository Template
 
-[![Keep a Changelog](https://img.shields.io/badge/changelog-Keep%20a%20Changelog-%23E05735)](CHANGELOG.md)
 [![Go Reference](https://pkg.go.dev/badge/github.com/golang-templates/seed.svg)](https://pkg.go.dev/github.com/golang-templates/seed)
 [![go.mod](https://img.shields.io/github/go-mod/go-version/golang-templates/seed)](go.mod)
 [![LICENSE](https://img.shields.io/github/license/golang-templates/seed)](LICENSE)
@@ -41,7 +40,6 @@ It includes:
 1. Replace all occurrences of `golang-templates/seed` to `your_org/repo_name` in all files.
 1. Replace all occurrences of `seed` to `repo_name` in [Dockerfile](Dockerfile).
 1. Update the following files:
-   - [CHANGELOG.md](CHANGELOG.md)
    - [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
    - [LICENSE](LICENSE)
    - [README.md](README.md)
@@ -135,9 +133,6 @@ Take a look at GoReleaser [docs](https://goreleaser.com/customization/)
 as well as [its repo](https://github.com/goreleaser/goreleaser/)
 how it is dogfooding its functionality.
 You can use it to add deb/rpm/snap packages, Homebrew Tap, Scoop App Manifest etc.
-
-If you are developing a library and you like handcrafted changelog and release notes,
-you are free to remove any usage of GoReleaser.
 
 ## Contributing
 
