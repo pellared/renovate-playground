@@ -28,7 +28,6 @@ It includes:
 - unit testing with
   [race detector](https://blog.golang.org/race-detector),
   code coverage [HTML report](https://blog.golang.org/cover),
-- releasing using [GoReleaser](https://github.com/goreleaser/goreleaser),
 - dependencies scanning and updating thanks to [Dependabot](https://dependabot.com),
 - security code analysis using [CodeQL Action](https://docs.github.com/en/github/finding-security-vulnerabilities-and-errors-in-your-code/about-code-scanning),
   and [govulncheck](https://pkg.go.dev/golang.org/x/vuln/cmd/govulncheck),
@@ -85,8 +84,7 @@ Notable files:
 - [.github/dependabot.yml](.github/dependabot.yml) - Dependabot configuration,
 - [.vscode](.vscode) - Visual Studio Code configuration files,
 - [.golangci.yml](.golangci.yml) - golangci-lint configuration,
-- [.goreleaser.yml](.goreleaser.yml) - GoReleaser configuration,
-- [Dockerfile](Dockerfile) - Dockerfile used by GoReleaser to create a container image,
+- [Dockerfile](Dockerfile) - Dockerfile for containerization,
 - [Makefile](Makefile) - Make targets used for development, [CI build](.github/workflows) and [.vscode/tasks.json](.vscode/tasks.json),
 
 ## FAQ
@@ -126,13 +124,6 @@ However, take into consideration that then you are not going to use "bare-metal"
 
 Consider using [goyek](https://github.com/goyek/goyek)
 for creating cross-platform build pipelines in Go.
-
-### How can I customize the release
-
-Take a look at GoReleaser [docs](https://goreleaser.com/customization/)
-as well as [its repo](https://github.com/goreleaser/goreleaser/)
-how it is dogfooding its functionality.
-You can use it to add deb/rpm/snap packages, Homebrew Tap, Scoop App Manifest etc.
 
 ## Contributing
 

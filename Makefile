@@ -38,8 +38,8 @@ gen: ## go generate
 	go generate ./...
 
 .PHONY: build
-build: ## goreleaser build
-	go tool goreleaser build --clean --single-target --snapshot
+build: ## go build
+	go build -o dist/seed$(shell go env GOEXE) .
 
 .PHONY: spell
 spell: ## misspell
