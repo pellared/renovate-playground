@@ -106,8 +106,7 @@ if it really does not help you.
 ### Why GitHub Actions, not any other CI server
 
 GitHub Actions is out-of-the-box if you are already using GitHub.
-[Here](https://github.com/mvdan/github-actions-golang) you can learn
-how to use it for Go.
+You can learn how to use it for Go in the [GitHub Actions for Go guide](https://github.com/mvdan/github-actions-golang).
 
 However, changing to any other CI server should be very simple,
 because this repository has build logic and tooling installation in [Makefile](Makefile).
@@ -120,7 +119,7 @@ to `C:\TDM-GCC-64\bin\make.exe`.
 Alternatively, you may install [mingw-w64](http://mingw-w64.org/doku.php)
 and copy `mingw32-make.exe` accordingly.
 
-Take a look [here](https://github.com/docker-archive/toolbox/issues/673#issuecomment-355275054),
+Take a look at [this GitHub issue](https://github.com/docker-archive/toolbox/issues/673#issuecomment-355275054),
 if you have problems using Docker in Git Bash.
 
 You can also use [WSL (Windows Subsystem for Linux)](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
