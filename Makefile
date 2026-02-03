@@ -1,7 +1,7 @@
 SHELL := /bin/bash
 
 # renovate: datasource=docker depName=ghcr.io/igorshubovych/markdownlint-cli versioning=docker
-MARKDOWNLINT_VERSION = v0.43.0
+MARKDOWNLINT_VERSION = v0.47.0
 
 .DEFAULT_GOAL := all
 
